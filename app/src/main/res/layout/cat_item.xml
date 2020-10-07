@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.skydoves.transformationlayout.TransformationLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/transformationLayout"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    app:transformation_duration="400"
+    app:transformation_fadeMode="through">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:background="#000000"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:transitionName="myanim"
+        app:cardBackgroundColor="#000000"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp">
+
+        <TextView
+            android:id="@+id/tv_catName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:text="Amazing"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+
+    </androidx.cardview.widget.CardView>
+</com.skydoves.transformationlayout.TransformationLayout>
